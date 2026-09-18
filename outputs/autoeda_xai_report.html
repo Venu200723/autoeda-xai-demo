@@ -1,0 +1,37 @@
+<html><head><meta charset='utf-8'><title>AutoEDA XAI Report</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:2rem auto;line-height:1.55}</style></head><body># AutoEDA + XAI Demo Report<br>
+<br>
+**Generated:** 2026-09-18 09:03  <br>
+**Rows × cols:** 403 × 12  <br>
+**Target:** `churn`<br>
+<br>
+## Auto EDA figures<br>
+<br>
+- `/workspace/career-portfolio/autoeda-xai-demo/outputs/autoeda_distributions.png`<br>
+- `/workspace/career-portfolio/autoeda-xai-demo/outputs/autoeda_target_balance.png`<br>
+- `/workspace/career-portfolio/autoeda-xai-demo/outputs/autoeda_corr.png`<br>
+<br>
+## Model<br>
+<br>
+- Train/test: **302** / **101**<br>
+- Accuracy: **0.7426**<br>
+- F1 (weighted): **0.7003**<br>
+<br>
+## Explainability (`permutation`)<br>
+<br>
+- Figure: `/workspace/career-portfolio/autoeda-xai-demo/outputs/xai_permutation_importance.png`<br>
+<br>
+| Feature | Importance |<br>
+|---|---:|<br>
+| `monthly_charges` | 0.0040 |<br>
+| `contract` | 0.0040 |<br>
+| `senior_citizen` | 0.0040 |<br>
+| `tenure_months` | -0.0079 |<br>
+| `internet_service` | -0.0079 |<br>
+| `total_charges` | -0.0099 |<br>
+| `tech_support` | -0.0099 |<br>
+| `dependents` | -0.0099 |<br>
+| `payment_method` | -0.0257 |<br>
+| `partner` | -0.0396 |<br>
+<br>
+---<br>
+_autoeda-xai-demo — load CSV → Auto EDA → model → SHAP/permutation → report._</body></html>
